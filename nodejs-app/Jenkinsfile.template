@@ -85,16 +85,8 @@ pipeline {
         beforeAgent true
         branch 'master'
       }
-      options {
-        timeout(time: 30, unit: 'SECONDS') 
-      }
-      input {
-        message "Should we deploy?"
-        submitter "paul0821,oransmat"
-        submitterParameter "APPROVER"
-      }
       steps {
-        echo "Continuing with deployment - approved by ${APPROVER}"
+        echo "Continuing with deployment"
       }
     }
 
