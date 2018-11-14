@@ -15,6 +15,10 @@ pipeline {
     }
   }
   
+  triggers {
+    eventTrigger simpleMatch('hello-api-push-event')
+  }
+  
   stages {
     stage('Tests') {
       parallel {
