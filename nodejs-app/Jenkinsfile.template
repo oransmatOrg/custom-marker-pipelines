@@ -41,7 +41,7 @@ pipeline {
       }
       input {
         message "Should we deploy?"
-        submitter "paul0821"
+        submitter "paul0821","oransmat"
         submitterParameter "APPROVER"
       }
       steps {
